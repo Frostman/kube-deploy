@@ -217,7 +217,6 @@ kube::multinode::start_k8s_master() {
       --cluster-domain=cluster.local \
       ${CNI_ARGS} \
       ${CONTAINERIZED_FLAG} \
-      --hostname-override=${IP_ADDRESS} \
       --v=2
 }
 
@@ -244,7 +243,6 @@ kube::multinode::start_k8s_worker() {
       --cluster-domain=cluster.local \
       ${CNI_ARGS} \
       ${CONTAINERIZED_FLAG} \
-      --hostname-override=${IP_ADDRESS} \
       --v=2
 }
 
